@@ -1,0 +1,111 @@
+.titre {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: center;
+  font-size: 800%;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.zoneBoutons {
+  display: flex;
+  height: 85vh;
+  background-image: url("./images/ob_3cbe55_visage-rectangulaire-angelina-jolie.jpg");
+  background-position: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 800px;
+  height: 800px;
+}
+
+.box {
+  display: grid;
+  grid: solid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  border: solid;
+  width: 100%;
+}
+
+.box.is-disabled {
+  pointer-events: none;
+}
+
+.rond {
+  border: solid rgb(216, 162, 189);
+  background-color: red;
+  border: 0, 5px solid;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-image: url("./images/thumbnail_Capture.png");
+  background-position: 160px;
+  background-repeat: repeat-x;
+  background-size: 200%;
+  position: absolute;
+}
+
+.zonevalide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: solid green; */
+  float: right;
+}
+
+.zoneinterdite {
+  /* border: solid red; */
+  float: right;
+}
+
+#btn_start_countdown {
+  background-color: rgb(154, 216, 154);
+  font-size: 60px;
+  margin-top: 100px;
+  margin-left: 250px;
+  text-shadow: 0 -3px #eee;
+  border: 1px solid #1f6b81;
+  -webkit-border-radius: 32px / 34px;
+  -moz-border-radius: 32px / 34px;
+  border-radius: 42px / 34px;
+}
+#bip {
+  font-size: 100px;
+  float: left;
+  margin-top: 100px;
+  margin-left: 130px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.smallContainer {
+  display: flex;
+  flex-direction: row;
+  height: 800px;
+}
+.smallerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+}
+body {
+  background-image: url("./images/fond.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.numberBouton {
+  margin-left: 20%;
+}
